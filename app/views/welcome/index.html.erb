@@ -1,24 +1,33 @@
-<%= image_tag("logo.png", class: "img-responsive center-block" , :alt=> "logo", :width=> "20%", :height=> "10%") %>
+<html>
+   <%= image_tag("logo.png", class: "img-responsive center-block" , :alt=> "logo", :width=> "20%", :height=> "10%") %>
 <style>
     p {
         
-        color: red;
+        color: green;
         text-align: center;
     }
+    
     .button{
         background-color: #4CAF50;
         border: none;
         color: white;
         padding: 10px;
         text-align: center;
+        display: inline-block;
         margin: 10px;
     }
+    
+    div { 
+        text-align: center;
+    }
 </style>
+<body>
+    <p>Welcome to Harris Teeter - University City Blvd</p>
 
- 
-<!--<h1></h1>-->
-<p>Welcome to Harris Teeter - University City Blvd</p>
+    <%= image_tag("harrisTeeter.jpg", class: "img-responsive center-block" , :alt=> "harrisTeeter") %>
 
-<%= image_tag("harrisTeeter.jpg", class: "img-responsive center-block" , :alt=> "harrisTeeter") %>
-
-<div class="button" style="width: 110px; height: 60px; text-align: center;"> Get Started!</div>
+<div>
+    <button class = "button"> Get Started! </button> 
+</div>
+</body>
+</html>
