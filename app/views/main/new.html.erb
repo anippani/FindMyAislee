@@ -70,7 +70,7 @@
 
 #myInput {
   box-sizing: border-box;
-  background-image: url('searchicon.png');
+  background-image: url('images/searchicon.png');
   background-position: 14px 12px;
   background-repeat: no-repeat;
   font-size: 16px;
@@ -174,7 +174,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="/welcome/index">FindMyAisle</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -199,15 +199,36 @@
   <div id="myDropdown" class="dropdown-content">
     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
     <!--In the quotes is where you link the buttons to-->
-    <a href="/welcome/index">Item 1</a>
-    <a href="/welcome/index">Item 2</a>
-    <a href="/welcome/index">Item 3</a>
-    <a href="/welcome/index">Item 4</a>
+    <a href="/main/new">Doritos</a>
+    <a href="/welcome/index">12oz Dr. Pepper Soda Can</a>
+    <a href="/welcome/index">Sparkling Water</a>
+    <a href="/welcome/index">Dry Fruits</a>
     <a href="/welcome/index">Item 5</a>
     <a href="/welcome/index">Item 6</a>
     <a href="/welcome/index">Item 7</a>
   </div>
 </div>
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title">Modal 1</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal1-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title">Modal 2</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <script>
 /* When the user clicks on the button,
