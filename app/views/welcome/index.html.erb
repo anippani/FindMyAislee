@@ -58,6 +58,30 @@
   border-color: transparent;
   color: #fff !important;
 }
+
+/*Google Maps*/
+.map-container {
+  overflow:hidden;
+  padding-top:56.25%;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:25%;
+  width:25%;
+  position:absolute;
+}
+
+.modal-content {
+  background-color: red;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
     
 </style>
 </head>
@@ -71,6 +95,39 @@
         <button type="submit">Get Started!</button>
     </form>
     
+<div class="modal fade" id="modalCustom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <!--Content-->
+    <div class="modal-content">
+
+      <!--Body-->
+      <div class="modal-body mb-0 p-0">
+
+        <!--Google map-->
+        <div id="map-container-google-18" class="z-depth-1-half map-container-11"  style="height: 400px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3256.3949761042286!2d-80.74052008437246!3d35.29616608028593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88541ea0cc11add9%3A0xf6cdcec43b190ee!2s8600%20University%20City%20Blvd%2C%20Charlotte%2C%20NC%2028213!5e0!3m2!1sen!2sus!4v1576044699091!5m2!1sen!2sus"
+          width="800" height="415" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <!--Footer-->
+      <div class="modal-footer justify-content-center">
+
+        <button type="button" class="btn btn-outline-secondary btn-md" data-dismiss="modal">Close <i class="fas fa-times ml-1"></i></button>
+
+      </div>
+
+    </div>
+    <!--/.Content-->
+
+  </div>
+</div>
+<!--Modal: Name-->
+</div>
+
 <!--Navigation Bar-->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
